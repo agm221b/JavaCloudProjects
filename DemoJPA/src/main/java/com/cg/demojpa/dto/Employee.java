@@ -6,7 +6,10 @@ import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Embedded;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
@@ -34,21 +37,16 @@ public class Employee {
 	@Embedded
 	private Address address;
 	
-	@OneToOne(cascade = CascadeType.ALL)				//going from one side currently, unidirectional
+	@OneToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)//going from one side currently, unidirectional
 	private Project proj;
+	
+	@ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+	@JoinColumn(name = "dept_id")
+	private Department dept;
 	
 	public Employee() {
 		super();
 		// TODO Auto-generated constructor stub
-	}
-	public Employee(Integer empId, String empName, Double empSal, Date dateOfJoining, Address address, Project project) {
-		super();
-		this.empId = empId;
-		this.empName = empName;
-		this.empSal = empSal;
-		this.dateOfJoining = dateOfJoining;
-		this.address = address;
-		this.proj = project;
 	}
 	public Integer getEmpId() {
 		return empId;
@@ -80,6 +78,25 @@ public class Employee {
 	public void setProj(Project proj) {
 		this.proj = proj;
 	}
+	public Department getDept() {
+		return dept;
+	}
+	public void setDept(Department dept) {
+		this.dept = dept;
+	}
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((address == null) ? 0 : address.hashCode());
+		result = prime * result + ((dateOfJoining == null) ? 0 : dateOfJoining.hashCode());
+		result = prime * result + ((dept == null) ? 0 : dept.hashCode());
+		result = prime * result + ((empId == null) ? 0 : empId.hashCode());
+		result = prime * result + ((empName == null) ? 0 : empName.hashCode());
+		result = prime * result + ((empSal == null) ? 0 : empSal.hashCode());
+		result = prime * result + ((proj == null) ? 0 : proj.hashCode());
+		return result;
+	}
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -98,6 +115,11 @@ public class Employee {
 			if (other.dateOfJoining != null)
 				return false;
 		} else if (!dateOfJoining.equals(other.dateOfJoining))
+			return false;
+		if (dept == null) {
+			if (other.dept != null)
+				return false;
+		} else if (!dept.equals(other.dept))
 			return false;
 		if (empId == null) {
 			if (other.empId != null)
@@ -122,21 +144,21 @@ public class Employee {
 		return true;
 	}
 	@Override
-	public int hashCode() {
-		final int prime = 31;
-		int result = 1;
-		result = prime * result + ((address == null) ? 0 : address.hashCode());
-		result = prime * result + ((dateOfJoining == null) ? 0 : dateOfJoining.hashCode());
-		result = prime * result + ((empId == null) ? 0 : empId.hashCode());
-		result = prime * result + ((empName == null) ? 0 : empName.hashCode());
-		result = prime * result + ((empSal == null) ? 0 : empSal.hashCode());
-		result = prime * result + ((proj == null) ? 0 : proj.hashCode());
-		return result;
-	}
-	@Override
 	public String toString() {
 		return "Employee [empId=" + empId + ", empName=" + empName + ", empSal=" + empSal + ", dateOfJoining="
-				+ dateOfJoining + ", address=" + address + ", proj=" + proj + "]";
+				+ dateOfJoining + ", address=" + address + ", proj=" + proj + ", dept=" + dept + "]";
 	}
+	public Employee(Integer empId, String empName, Double empSal, Date dateOfJoining, Address address, Project proj,
+			Department dept) {
+		super();
+		this.empId = empId;
+		this.empName = empName;
+		this.empSal = empSal;
+		this.dateOfJoining = dateOfJoining;
+		this.address = address;
+		this.proj = proj;
+		this.dept = dept;
+	}
+	
 	
 }

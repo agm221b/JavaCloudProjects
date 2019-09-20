@@ -8,6 +8,7 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
 
+import com.cg.demojpa.dto.Department;
 import com.cg.demojpa.dto.Employee;
 import com.cg.demojpa.dto.Project;
 
@@ -22,6 +23,13 @@ public class EmployeeDaoImpl implements EmployeeDao{
 		EntityManager em = entityManagerFactory.createEntityManager();
 		EntityTransaction tran = em.getTransaction();
 		Project pro=emp.getProj();
+		Department dep = em.find(Department.class, emp.getDept().getDeptId());
+		
+		if(dep!=null)
+		{
+			emp.setDept(dep);
+		}
+		
 		tran.begin(); 
 		//em.persist(pro);
 		em.persist(emp); 	//em.flush or tran.commit

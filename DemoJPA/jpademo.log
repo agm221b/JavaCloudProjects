@@ -225,3 +225,716 @@ HHH000037: Columns: [proj_name, proj_cost, proj_id]
 HHH000108: Foreign keys: []
 HHH000126: Indexes: [primary]
 HHH000232: Schema update complete
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: demojpa
+	...]
+HHH000412: Hibernate Core {4.3.10.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+HHH000402: Using Hibernate built-in connection pool (not for production use!)
+HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testjpadb]
+HHH000046: Connection properties: {user=root, password=****}
+HHH000006: Autocommit mode: false
+HHH000115: Hibernate connection pool size: 20 (min=1)
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+HHH000397: Using ASTQueryTranslatorFactory
+HHH000228: Running hbm2ddl schema update
+HHH000102: Fetching database metadata
+HHH000396: Updating schema
+HHH000262: Table not found: jpa_dept
+HHH000262: Table not found: jpa_dept_jpa_employee
+HHH000261: Table found: testjpadb.jpa_employee
+HHH000037: Columns: [pincode, dateofjoining, city, proj_proj_id, emp_name, emp_sal, state, emp_id]
+HHH000108: Foreign keys: [fk_ngde70bvuxl3lx08iisyaj7yt]
+HHH000126: Indexes: [fk_ngde70bvuxl3lx08iisyaj7yt, primary]
+HHH000261: Table found: testjpadb.jpa_proj
+HHH000037: Columns: [proj_name, proj_cost, proj_id]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000262: Table not found: jpa_dept
+HHH000262: Table not found: jpa_dept_jpa_employee
+HHH000262: Table not found: jpa_dept
+HHH000262: Table not found: jpa_dept_jpa_employee
+HHH000232: Schema update complete
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: demojpa
+	...]
+HHH000412: Hibernate Core {4.3.10.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+HHH000402: Using Hibernate built-in connection pool (not for production use!)
+HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testjpadb]
+HHH000046: Connection properties: {user=root, password=****}
+HHH000006: Autocommit mode: false
+HHH000115: Hibernate connection pool size: 20 (min=1)
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+HHH000397: Using ASTQueryTranslatorFactory
+HHH000228: Running hbm2ddl schema update
+HHH000102: Fetching database metadata
+HHH000396: Updating schema
+HHH000261: Table found: testjpadb.jpa_dept
+HHH000037: Columns: [deptid, deptname]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: testjpadb.jpa_dept_jpa_employee
+HHH000037: Columns: [jpa_dept_deptid, emplist_emp_id]
+HHH000108: Foreign keys: [fk_mvd4haebltl52c1bd4vdngaax, fk_fs6760dgxrl1m1x71mwks6t2l]
+HHH000126: Indexes: [fk_mvd4haebltl52c1bd4vdngaax, uk_fs6760dgxrl1m1x71mwks6t2l]
+HHH000261: Table found: testjpadb.jpa_employee
+HHH000037: Columns: [pincode, dateofjoining, city, proj_proj_id, emp_name, dept_deptid, emp_sal, state, emp_id]
+HHH000108: Foreign keys: [fk_7x5ggf8a11ud996roqycrmelt, fk_ngde70bvuxl3lx08iisyaj7yt]
+HHH000126: Indexes: [fk_7x5ggf8a11ud996roqycrmelt, fk_ngde70bvuxl3lx08iisyaj7yt, primary]
+HHH000261: Table found: testjpadb.jpa_proj
+HHH000037: Columns: [proj_name, proj_cost, proj_id]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000232: Schema update complete
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: demojpa
+	...]
+HHH000412: Hibernate Core {4.3.10.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+HHH000402: Using Hibernate built-in connection pool (not for production use!)
+HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testjpadb]
+HHH000046: Connection properties: {user=root, password=****}
+HHH000006: Autocommit mode: false
+HHH000115: Hibernate connection pool size: 20 (min=1)
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+HHH000397: Using ASTQueryTranslatorFactory
+HHH000228: Running hbm2ddl schema update
+HHH000102: Fetching database metadata
+HHH000396: Updating schema
+HHH000261: Table found: testjpadb.jpa_dept
+HHH000037: Columns: [deptid, deptname]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: testjpadb.jpa_dept_jpa_employee
+HHH000037: Columns: [jpa_dept_deptid, emplist_emp_id]
+HHH000108: Foreign keys: [fk_mvd4haebltl52c1bd4vdngaax, fk_fs6760dgxrl1m1x71mwks6t2l]
+HHH000126: Indexes: [fk_mvd4haebltl52c1bd4vdngaax, uk_fs6760dgxrl1m1x71mwks6t2l]
+HHH000261: Table found: testjpadb.jpa_employee
+HHH000037: Columns: [pincode, dateofjoining, city, proj_proj_id, emp_name, dept_deptid, emp_sal, state, emp_id]
+HHH000108: Foreign keys: [fk_7x5ggf8a11ud996roqycrmelt, fk_ngde70bvuxl3lx08iisyaj7yt]
+HHH000126: Indexes: [fk_7x5ggf8a11ud996roqycrmelt, fk_ngde70bvuxl3lx08iisyaj7yt, primary]
+HHH000261: Table found: testjpadb.jpa_proj
+HHH000037: Columns: [proj_name, proj_cost, proj_id]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000232: Schema update complete
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: demojpa
+	...]
+HHH000412: Hibernate Core {4.3.10.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+HHH000402: Using Hibernate built-in connection pool (not for production use!)
+HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testjpadb]
+HHH000046: Connection properties: {user=root, password=****}
+HHH000006: Autocommit mode: false
+HHH000115: Hibernate connection pool size: 20 (min=1)
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: demojpa
+	...]
+HHH000412: Hibernate Core {4.3.10.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+HHH000402: Using Hibernate built-in connection pool (not for production use!)
+HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testjpadb]
+HHH000046: Connection properties: {user=root, password=****}
+HHH000006: Autocommit mode: false
+HHH000115: Hibernate connection pool size: 20 (min=1)
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+HHH000397: Using ASTQueryTranslatorFactory
+HHH000228: Running hbm2ddl schema update
+HHH000102: Fetching database metadata
+HHH000396: Updating schema
+HHH000261: Table found: testjpadb.jpa_dept
+HHH000037: Columns: [deptid, deptname]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: testjpadb.jpa_employee
+HHH000037: Columns: [pincode, dateofjoining, city, proj_proj_id, emp_name, dept_deptid, emp_sal, state, emp_id]
+HHH000108: Foreign keys: [fk_7x5ggf8a11ud996roqycrmelt, fk_ngde70bvuxl3lx08iisyaj7yt]
+HHH000126: Indexes: [fk_7x5ggf8a11ud996roqycrmelt, fk_ngde70bvuxl3lx08iisyaj7yt, primary]
+HHH000261: Table found: testjpadb.jpa_proj
+HHH000037: Columns: [proj_name, proj_cost, proj_id]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000388: Unsuccessful: alter table jpa_employee add constraint FK_mdg8ai5qp4n30ii7j2cm9x4b7 foreign key (emp_id) references jpa_dept (deptId)
+Cannot add or update a child row: a foreign key constraint fails (`testjpadb`.<result 2 when explaining filename '#sql-2f80_55'>, CONSTRAINT `FK_mdg8ai5qp4n30ii7j2cm9x4b7` FOREIGN KEY (`emp_id`) REFERENCES `jpa_dept` (`deptId`))
+HHH000232: Schema update complete
+SQL Error: 1062, SQLState: 23000
+Duplicate entry '5' for key 'PRIMARY'
+HHH000010: On release of batch it still contained JDBC statements
+SQL Warning Code: 1062, SQLState: 23000
+Duplicate entry '5' for key 'PRIMARY'
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: demojpa
+	...]
+HHH000412: Hibernate Core {4.3.10.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+HHH000402: Using Hibernate built-in connection pool (not for production use!)
+HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testjpadb]
+HHH000046: Connection properties: {user=root, password=****}
+HHH000006: Autocommit mode: false
+HHH000115: Hibernate connection pool size: 20 (min=1)
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+HHH000397: Using ASTQueryTranslatorFactory
+HHH000228: Running hbm2ddl schema update
+HHH000102: Fetching database metadata
+HHH000396: Updating schema
+HHH000262: Table not found: jpa_dept
+HHH000262: Table not found: jpa_employee
+HHH000262: Table not found: jpa_proj
+HHH000262: Table not found: jpa_dept
+HHH000262: Table not found: jpa_employee
+HHH000262: Table not found: jpa_proj
+HHH000262: Table not found: jpa_dept
+HHH000262: Table not found: jpa_employee
+HHH000262: Table not found: jpa_proj
+HHH000232: Schema update complete
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: demojpa
+	...]
+HHH000412: Hibernate Core {4.3.10.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+HHH000402: Using Hibernate built-in connection pool (not for production use!)
+HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testjpadb]
+HHH000046: Connection properties: {user=root, password=****}
+HHH000006: Autocommit mode: false
+HHH000115: Hibernate connection pool size: 20 (min=1)
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+HHH000397: Using ASTQueryTranslatorFactory
+HHH000228: Running hbm2ddl schema update
+HHH000102: Fetching database metadata
+HHH000396: Updating schema
+HHH000261: Table found: testjpadb.jpa_dept
+HHH000037: Columns: [dept_name, dept_id]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: testjpadb.jpa_employee
+HHH000037: Columns: [pincode, city, dateofjoining, proj_proj_id, emp_name, state, emp_sal, dept_id, emp_id]
+HHH000108: Foreign keys: [fk_mdg8ai5qp4n30ii7j2cm9x4b7, fk_ngde70bvuxl3lx08iisyaj7yt, fk_38a1x5a7spd5a37l4h9biyoj1]
+HHH000126: Indexes: [fk_ngde70bvuxl3lx08iisyaj7yt, primary, fk_38a1x5a7spd5a37l4h9biyoj1]
+HHH000261: Table found: testjpadb.jpa_proj
+HHH000037: Columns: [proj_name, proj_cost, proj_id]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000232: Schema update complete
+SQL Error: 1062, SQLState: 23000
+Duplicate entry '1' for key 'PRIMARY'
+HHH000010: On release of batch it still contained JDBC statements
+SQL Warning Code: 1062, SQLState: 23000
+Duplicate entry '1' for key 'PRIMARY'
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: demojpa
+	...]
+HHH000412: Hibernate Core {4.3.10.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+HHH000402: Using Hibernate built-in connection pool (not for production use!)
+HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testjpadb]
+HHH000046: Connection properties: {user=root, password=****}
+HHH000006: Autocommit mode: false
+HHH000115: Hibernate connection pool size: 20 (min=1)
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+HHH000397: Using ASTQueryTranslatorFactory
+HHH000228: Running hbm2ddl schema update
+HHH000102: Fetching database metadata
+HHH000396: Updating schema
+HHH000261: Table found: testjpadb.jpa_dept
+HHH000037: Columns: [dept_name, dept_id]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: testjpadb.jpa_employee
+HHH000037: Columns: [pincode, city, dateofjoining, proj_proj_id, emp_name, state, emp_sal, dept_id, emp_id]
+HHH000108: Foreign keys: [fk_mdg8ai5qp4n30ii7j2cm9x4b7, fk_ngde70bvuxl3lx08iisyaj7yt, fk_38a1x5a7spd5a37l4h9biyoj1]
+HHH000126: Indexes: [fk_ngde70bvuxl3lx08iisyaj7yt, primary, fk_38a1x5a7spd5a37l4h9biyoj1]
+HHH000261: Table found: testjpadb.jpa_proj
+HHH000037: Columns: [proj_name, proj_cost, proj_id]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000232: Schema update complete
+SQL Error: 1062, SQLState: 23000
+Duplicate entry '1' for key 'PRIMARY'
+HHH000010: On release of batch it still contained JDBC statements
+SQL Warning Code: 1062, SQLState: 23000
+Duplicate entry '1' for key 'PRIMARY'
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: demojpa
+	...]
+HHH000412: Hibernate Core {4.3.10.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+HHH000402: Using Hibernate built-in connection pool (not for production use!)
+HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testjpadb]
+HHH000046: Connection properties: {user=root, password=****}
+HHH000006: Autocommit mode: false
+HHH000115: Hibernate connection pool size: 20 (min=1)
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+HHH000397: Using ASTQueryTranslatorFactory
+HHH000228: Running hbm2ddl schema update
+HHH000102: Fetching database metadata
+HHH000396: Updating schema
+HHH000261: Table found: testjpadb.jpa_dept
+HHH000037: Columns: [dept_name, dept_id]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: testjpadb.jpa_employee
+HHH000037: Columns: [pincode, city, dateofjoining, proj_proj_id, emp_name, state, emp_sal, dept_id, emp_id]
+HHH000108: Foreign keys: [fk_mdg8ai5qp4n30ii7j2cm9x4b7, fk_ngde70bvuxl3lx08iisyaj7yt, fk_38a1x5a7spd5a37l4h9biyoj1]
+HHH000126: Indexes: [fk_ngde70bvuxl3lx08iisyaj7yt, primary, fk_38a1x5a7spd5a37l4h9biyoj1]
+HHH000261: Table found: testjpadb.jpa_proj
+HHH000037: Columns: [proj_name, proj_cost, proj_id]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000232: Schema update complete
+SQL Error: 1062, SQLState: 23000
+Duplicate entry '1' for key 'PRIMARY'
+HHH000010: On release of batch it still contained JDBC statements
+SQL Warning Code: 1062, SQLState: 23000
+Duplicate entry '1' for key 'PRIMARY'
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: demojpa
+	...]
+HHH000412: Hibernate Core {4.3.10.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+HHH000402: Using Hibernate built-in connection pool (not for production use!)
+HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testjpadb]
+HHH000046: Connection properties: {user=root, password=****}
+HHH000006: Autocommit mode: false
+HHH000115: Hibernate connection pool size: 20 (min=1)
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+HHH000397: Using ASTQueryTranslatorFactory
+HHH000228: Running hbm2ddl schema update
+HHH000102: Fetching database metadata
+HHH000396: Updating schema
+HHH000261: Table found: testjpadb.jpa_dept
+HHH000037: Columns: [dept_name, dept_id]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: testjpadb.jpa_employee
+HHH000037: Columns: [pincode, city, dateofjoining, proj_proj_id, emp_name, state, emp_sal, dept_id, emp_id]
+HHH000108: Foreign keys: [fk_mdg8ai5qp4n30ii7j2cm9x4b7, fk_ngde70bvuxl3lx08iisyaj7yt, fk_38a1x5a7spd5a37l4h9biyoj1]
+HHH000126: Indexes: [fk_ngde70bvuxl3lx08iisyaj7yt, primary, fk_38a1x5a7spd5a37l4h9biyoj1]
+HHH000261: Table found: testjpadb.jpa_proj
+HHH000037: Columns: [proj_name, proj_cost, proj_id]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000232: Schema update complete
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: demojpa
+	...]
+HHH000412: Hibernate Core {4.3.10.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+HHH000402: Using Hibernate built-in connection pool (not for production use!)
+HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testjpadb]
+HHH000046: Connection properties: {user=root, password=****}
+HHH000006: Autocommit mode: false
+HHH000115: Hibernate connection pool size: 20 (min=1)
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+HHH000397: Using ASTQueryTranslatorFactory
+HHH000228: Running hbm2ddl schema update
+HHH000102: Fetching database metadata
+HHH000396: Updating schema
+HHH000261: Table found: testjpadb.jpa_dept
+HHH000037: Columns: [dept_name, dept_id]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: testjpadb.jpa_employee
+HHH000037: Columns: [pincode, city, dateofjoining, proj_proj_id, emp_name, state, emp_sal, dept_id, emp_id]
+HHH000108: Foreign keys: [fk_mdg8ai5qp4n30ii7j2cm9x4b7, fk_ngde70bvuxl3lx08iisyaj7yt, fk_38a1x5a7spd5a37l4h9biyoj1]
+HHH000126: Indexes: [fk_ngde70bvuxl3lx08iisyaj7yt, primary, fk_38a1x5a7spd5a37l4h9biyoj1]
+HHH000261: Table found: testjpadb.jpa_proj
+HHH000037: Columns: [proj_name, proj_cost, proj_id]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000232: Schema update complete
+SQL Error: 1452, SQLState: 23000
+Cannot add or update a child row: a foreign key constraint fails (`testjpadb`.`jpa_employee`, CONSTRAINT `FK_mdg8ai5qp4n30ii7j2cm9x4b7` FOREIGN KEY (`emp_id`) REFERENCES `jpa_dept` (`dept_id`))
+HHH000010: On release of batch it still contained JDBC statements
+SQL Warning Code: 1452, SQLState: HY000
+Cannot add or update a child row: a foreign key constraint fails (`testjpadb`.`jpa_employee`, CONSTRAINT `FK_mdg8ai5qp4n30ii7j2cm9x4b7` FOREIGN KEY (`emp_id`) REFERENCES `jpa_dept` (`dept_id`))
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: demojpa
+	...]
+HHH000412: Hibernate Core {4.3.10.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+HHH000402: Using Hibernate built-in connection pool (not for production use!)
+HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testjpadb]
+HHH000046: Connection properties: {user=root, password=****}
+HHH000006: Autocommit mode: false
+HHH000115: Hibernate connection pool size: 20 (min=1)
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: demojpa
+	...]
+HHH000412: Hibernate Core {4.3.10.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+HHH000402: Using Hibernate built-in connection pool (not for production use!)
+HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testjpadb]
+HHH000046: Connection properties: {user=root, password=****}
+HHH000006: Autocommit mode: false
+HHH000115: Hibernate connection pool size: 20 (min=1)
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: demojpa
+	...]
+HHH000412: Hibernate Core {4.3.10.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+HHH000402: Using Hibernate built-in connection pool (not for production use!)
+HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testjpadb]
+HHH000046: Connection properties: {user=root, password=****}
+HHH000006: Autocommit mode: false
+HHH000115: Hibernate connection pool size: 20 (min=1)
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+HHH000397: Using ASTQueryTranslatorFactory
+HHH000228: Running hbm2ddl schema update
+HHH000102: Fetching database metadata
+HHH000396: Updating schema
+HHH000261: Table found: testjpadb.jpa_dept
+HHH000037: Columns: [dept_name, dept_id]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: testjpadb.jpa_employee
+HHH000037: Columns: [pincode, city, dateofjoining, proj_proj_id, emp_name, state, emp_sal, dept_id, emp_id]
+HHH000108: Foreign keys: [fk_mdg8ai5qp4n30ii7j2cm9x4b7, fk_ngde70bvuxl3lx08iisyaj7yt, fk_38a1x5a7spd5a37l4h9biyoj1]
+HHH000126: Indexes: [fk_ngde70bvuxl3lx08iisyaj7yt, primary, fk_38a1x5a7spd5a37l4h9biyoj1]
+HHH000261: Table found: testjpadb.jpa_proj
+HHH000037: Columns: [proj_name, proj_cost, proj_id]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000232: Schema update complete
+SQL Error: 1452, SQLState: 23000
+Cannot add or update a child row: a foreign key constraint fails (`testjpadb`.`jpa_employee`, CONSTRAINT `FK_mdg8ai5qp4n30ii7j2cm9x4b7` FOREIGN KEY (`emp_id`) REFERENCES `jpa_dept` (`dept_id`))
+HHH000010: On release of batch it still contained JDBC statements
+SQL Warning Code: 1452, SQLState: HY000
+Cannot add or update a child row: a foreign key constraint fails (`testjpadb`.`jpa_employee`, CONSTRAINT `FK_mdg8ai5qp4n30ii7j2cm9x4b7` FOREIGN KEY (`emp_id`) REFERENCES `jpa_dept` (`dept_id`))
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: demojpa
+	...]
+HHH000412: Hibernate Core {4.3.10.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+HHH000402: Using Hibernate built-in connection pool (not for production use!)
+HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testjpadb]
+HHH000046: Connection properties: {user=root, password=****}
+HHH000006: Autocommit mode: false
+HHH000115: Hibernate connection pool size: 20 (min=1)
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+HHH000397: Using ASTQueryTranslatorFactory
+HHH000228: Running hbm2ddl schema update
+HHH000102: Fetching database metadata
+HHH000396: Updating schema
+HHH000261: Table found: testjpadb.jpa_dept
+HHH000037: Columns: [dept_name, dept_id]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: testjpadb.jpa_employee
+HHH000037: Columns: [pincode, city, dateofjoining, proj_proj_id, emp_name, state, emp_sal, dept_id, emp_id]
+HHH000108: Foreign keys: [fk_mdg8ai5qp4n30ii7j2cm9x4b7, fk_ngde70bvuxl3lx08iisyaj7yt, fk_38a1x5a7spd5a37l4h9biyoj1]
+HHH000126: Indexes: [fk_ngde70bvuxl3lx08iisyaj7yt, primary, fk_38a1x5a7spd5a37l4h9biyoj1]
+HHH000261: Table found: testjpadb.jpa_proj
+HHH000037: Columns: [proj_name, proj_cost, proj_id]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000232: Schema update complete
+SQL Error: 1452, SQLState: 23000
+Cannot add or update a child row: a foreign key constraint fails (`testjpadb`.`jpa_employee`, CONSTRAINT `FK_mdg8ai5qp4n30ii7j2cm9x4b7` FOREIGN KEY (`emp_id`) REFERENCES `jpa_dept` (`dept_id`))
+HHH000010: On release of batch it still contained JDBC statements
+SQL Warning Code: 1452, SQLState: HY000
+Cannot add or update a child row: a foreign key constraint fails (`testjpadb`.`jpa_employee`, CONSTRAINT `FK_mdg8ai5qp4n30ii7j2cm9x4b7` FOREIGN KEY (`emp_id`) REFERENCES `jpa_dept` (`dept_id`))
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: demojpa
+	...]
+HHH000412: Hibernate Core {4.3.10.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+HHH000402: Using Hibernate built-in connection pool (not for production use!)
+HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testjpadb]
+HHH000046: Connection properties: {user=root, password=****}
+HHH000006: Autocommit mode: false
+HHH000115: Hibernate connection pool size: 20 (min=1)
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+HHH000397: Using ASTQueryTranslatorFactory
+HHH000228: Running hbm2ddl schema update
+HHH000102: Fetching database metadata
+HHH000396: Updating schema
+HHH000261: Table found: testjpadb.jpa_dept
+HHH000037: Columns: [dept_name, dept_id]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: testjpadb.jpa_employee
+HHH000037: Columns: [pincode, city, dateofjoining, proj_proj_id, emp_name, state, emp_sal, dept_id, emp_id]
+HHH000108: Foreign keys: [fk_mdg8ai5qp4n30ii7j2cm9x4b7, fk_ngde70bvuxl3lx08iisyaj7yt, fk_38a1x5a7spd5a37l4h9biyoj1]
+HHH000126: Indexes: [fk_ngde70bvuxl3lx08iisyaj7yt, primary, fk_38a1x5a7spd5a37l4h9biyoj1]
+HHH000261: Table found: testjpadb.jpa_proj
+HHH000037: Columns: [proj_name, proj_cost, proj_id]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000232: Schema update complete
+SQL Error: 1452, SQLState: 23000
+Cannot add or update a child row: a foreign key constraint fails (`testjpadb`.`jpa_employee`, CONSTRAINT `FK_mdg8ai5qp4n30ii7j2cm9x4b7` FOREIGN KEY (`emp_id`) REFERENCES `jpa_dept` (`dept_id`))
+HHH000010: On release of batch it still contained JDBC statements
+SQL Warning Code: 1452, SQLState: HY000
+Cannot add or update a child row: a foreign key constraint fails (`testjpadb`.`jpa_employee`, CONSTRAINT `FK_mdg8ai5qp4n30ii7j2cm9x4b7` FOREIGN KEY (`emp_id`) REFERENCES `jpa_dept` (`dept_id`))
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: demojpa
+	...]
+HHH000412: Hibernate Core {4.3.10.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+HHH000402: Using Hibernate built-in connection pool (not for production use!)
+HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testjpadb]
+HHH000046: Connection properties: {user=root, password=****}
+HHH000006: Autocommit mode: false
+HHH000115: Hibernate connection pool size: 20 (min=1)
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+HHH000397: Using ASTQueryTranslatorFactory
+HHH000228: Running hbm2ddl schema update
+HHH000102: Fetching database metadata
+HHH000396: Updating schema
+HHH000262: Table not found: jpa_dept
+HHH000262: Table not found: jpa_employee
+HHH000262: Table not found: jpa_proj
+HHH000262: Table not found: jpa_dept
+HHH000262: Table not found: jpa_employee
+HHH000262: Table not found: jpa_proj
+HHH000262: Table not found: jpa_dept
+HHH000262: Table not found: jpa_employee
+HHH000262: Table not found: jpa_proj
+HHH000232: Schema update complete
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: demojpa
+	...]
+HHH000412: Hibernate Core {4.3.10.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+HHH000402: Using Hibernate built-in connection pool (not for production use!)
+HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testjpadb]
+HHH000046: Connection properties: {user=root, password=****}
+HHH000006: Autocommit mode: false
+HHH000115: Hibernate connection pool size: 20 (min=1)
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+HHH000397: Using ASTQueryTranslatorFactory
+HHH000228: Running hbm2ddl schema update
+HHH000102: Fetching database metadata
+HHH000396: Updating schema
+HHH000262: Table not found: jpa_dept
+HHH000262: Table not found: jpa_employee
+HHH000262: Table not found: jpa_proj
+HHH000262: Table not found: jpa_dept
+HHH000262: Table not found: jpa_employee
+HHH000262: Table not found: jpa_proj
+HHH000262: Table not found: jpa_dept
+HHH000262: Table not found: jpa_employee
+HHH000262: Table not found: jpa_proj
+HHH000232: Schema update complete
+SQL Error: 1062, SQLState: 23000
+Duplicate entry '2334' for key 'PRIMARY'
+HHH000010: On release of batch it still contained JDBC statements
+SQL Warning Code: 1062, SQLState: 23000
+Duplicate entry '2334' for key 'PRIMARY'
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: demojpa
+	...]
+HHH000412: Hibernate Core {4.3.10.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+HHH000402: Using Hibernate built-in connection pool (not for production use!)
+HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testjpadb]
+HHH000046: Connection properties: {user=root, password=****}
+HHH000006: Autocommit mode: false
+HHH000115: Hibernate connection pool size: 20 (min=1)
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+HHH000397: Using ASTQueryTranslatorFactory
+HHH000228: Running hbm2ddl schema update
+HHH000102: Fetching database metadata
+HHH000396: Updating schema
+HHH000262: Table not found: jpa_dept
+HHH000262: Table not found: jpa_employee
+HHH000262: Table not found: jpa_proj
+HHH000262: Table not found: jpa_dept
+HHH000262: Table not found: jpa_employee
+HHH000262: Table not found: jpa_proj
+HHH000262: Table not found: jpa_dept
+HHH000262: Table not found: jpa_employee
+HHH000262: Table not found: jpa_proj
+HHH000232: Schema update complete
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: demojpa
+	...]
+HHH000412: Hibernate Core {4.3.10.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+HHH000402: Using Hibernate built-in connection pool (not for production use!)
+HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testjpadb]
+HHH000046: Connection properties: {user=root, password=****}
+HHH000006: Autocommit mode: false
+HHH000115: Hibernate connection pool size: 20 (min=1)
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+HHH000397: Using ASTQueryTranslatorFactory
+HHH000228: Running hbm2ddl schema update
+HHH000102: Fetching database metadata
+HHH000396: Updating schema
+HHH000261: Table found: testjpadb.jpa_dept
+HHH000037: Columns: [dept_name, dept_id]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: testjpadb.jpa_employee
+HHH000037: Columns: [pincode, city, dateofjoining, proj_proj_id, emp_name, state, emp_sal, dept_id, emp_id]
+HHH000108: Foreign keys: [fk_ngde70bvuxl3lx08iisyaj7yt, fk_38a1x5a7spd5a37l4h9biyoj1]
+HHH000126: Indexes: [fk_ngde70bvuxl3lx08iisyaj7yt, primary, fk_38a1x5a7spd5a37l4h9biyoj1]
+HHH000261: Table found: testjpadb.jpa_proj
+HHH000037: Columns: [proj_name, proj_cost, proj_id]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000232: Schema update complete
+SQL Error: 1062, SQLState: 23000
+Duplicate entry '3443' for key 'PRIMARY'
+HHH000010: On release of batch it still contained JDBC statements
+SQL Warning Code: 1062, SQLState: 23000
+Duplicate entry '3443' for key 'PRIMARY'
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: demojpa
+	...]
+HHH000412: Hibernate Core {4.3.10.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+HHH000402: Using Hibernate built-in connection pool (not for production use!)
+HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testjpadb]
+HHH000046: Connection properties: {user=root, password=****}
+HHH000006: Autocommit mode: false
+HHH000115: Hibernate connection pool size: 20 (min=1)
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+HHH000397: Using ASTQueryTranslatorFactory
+HHH000228: Running hbm2ddl schema update
+HHH000102: Fetching database metadata
+HHH000396: Updating schema
+HHH000261: Table found: testjpadb.jpa_dept
+HHH000037: Columns: [dept_name, dept_id]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: testjpadb.jpa_employee
+HHH000037: Columns: [pincode, city, dateofjoining, proj_proj_id, emp_name, state, emp_sal, dept_id, emp_id]
+HHH000108: Foreign keys: [fk_ngde70bvuxl3lx08iisyaj7yt, fk_38a1x5a7spd5a37l4h9biyoj1]
+HHH000126: Indexes: [fk_ngde70bvuxl3lx08iisyaj7yt, primary, fk_38a1x5a7spd5a37l4h9biyoj1]
+HHH000261: Table found: testjpadb.jpa_proj
+HHH000037: Columns: [proj_name, proj_cost, proj_id]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000232: Schema update complete
