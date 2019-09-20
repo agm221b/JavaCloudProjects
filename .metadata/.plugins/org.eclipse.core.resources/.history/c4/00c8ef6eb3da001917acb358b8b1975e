@@ -1,0 +1,8 @@
+package com.cg.demojpa.dto;
+
+public class Employee {
+	
+	private Integer empId;
+	private String empName;
+	
+}

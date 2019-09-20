@@ -1,0 +1,8 @@
+BranchProjectTracker__C\:\\Users\\User\\git\\bus-reservation-system\\.git_master=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<projects>\r\n<project>\\Sprint 2\\BusReservationSystem</project>\r\n<project>/</project>\r\n</projects>
+BranchProjectTracker__D\:\\Jee\ c\\JavaCloud\\maven.1568377506075\\.git_master=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<projects>\r\n<project>\\Sprint 2\\BusReservationSystem</project>\r\n</projects>
+CloneWizard_ImportProjects=true
+commit_dialog_history_messages=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<messages>\r\n<message>testing underway</message>\r\n<message>ui edits</message>\r\n<message>logger modif, ui changes</message>\r\n<message>adding .class</message>\r\n<message>validation changes, ui</message>\r\n<message>booking status merged</message>\r\n<message>bug fixes</message>\r\n<message>Merge branch &apos;master&apos; of&\#x0A;&\#x0A;https\://github.com/tejaswinibandaru/bus-reservation-system&\#x0A;&\#x0A;Conflicts\:&\#x0A;&\#x09;Sprint 2/BusReservationSystem/src/main/java/com/cg/busreservationsystem/dao/UserDaoImpl.java&\#x0A;&\#x09;Sprint 2/BusReservationSystem/target/classes/com/cg/busreservationsystem/dao/UserDaoImpl.class&\#x0A;&\#x09;Sprint 2/BusReservationSystem/target/classes/com/cg/busreservationsystem/dto/BusTransaction.class&\#x0A;</message>\r\n<message>dao v1.0 finished</message>\r\n<message>find all transactions incomp</message>\r\n</messages>
+eclipse.preferences.version=1
+org.eclipse.egit.ui.githistorypage.showallfilter=SHOWALLFOLDER
+resourcehistory_graph_split=576,423
+resourcehistory_rev_split=582,417

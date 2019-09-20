@@ -1,0 +1,39 @@
+package com.cg.demojpa.service;
+
+import java.util.List;
+
+import com.cg.demojpa.dao.EmployeeDao;
+import com.cg.demojpa.dao.EmployeeDaoImpl;
+import com.cg.demojpa.dto.Employee;
+
+public class EmployeeServiceImpl implements EmployeeService {
+
+	EmployeeDao employeeDao = new EmployeeDaoImpl();
+	public Employee addEmployee(Employee emp) {
+		// TODO Auto-generated method stub
+		return employeeDao.save(emp);
+	}
+
+	public List<Employee> showAll() {
+		// TODO Auto-generated method stub
+		return employeeDao.findAll();
+	}
+
+	public void removeEmployee(Integer empId) {
+		// TODO Auto-generated method stub
+		employeeDao.remove(empId);
+	}
+
+	public List<Employee> findBetwSal(double min, double max) {
+		// TODO Auto-generated method stub
+		return employeeDao.findBetwSal(min, max);
+	}
+
+	public void updateEmpSal(int id, double sal) {
+		// TODO Auto-generated method stub
+		employeeDao.updateEmpSal(id, sal);
+	}
+	
+	
+	
+}

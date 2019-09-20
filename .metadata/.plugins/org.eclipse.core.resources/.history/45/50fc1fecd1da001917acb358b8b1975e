@@ -1,0 +1,84 @@
+package com.cg.demojpa.ui;
+
+import java.util.List;
+import java.util.Scanner;
+
+import com.cg.demojpa.dto.Employee;
+import com.cg.demojpa.service.EmployeeService;
+import com.cg.demojpa.service.EmployeeServiceImpl;
+
+public class EmployeeMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		EmployeeService employeeService = new EmployeeServiceImpl();
+
+		Scanner sc = new Scanner(System.in);
+		int id;
+		double sal, min, max;
+		String name;
+		int choice;
+		System.out.println("1- Add, 2-Delete, 3- Update, 4-ViewAll, 5-Find between Salaries, 6-Exit");
+		while (true) {
+			choice = sc.nextInt();
+			if (choice == 1) {
+				System.out.println("Enter the Id");
+				id = sc.nextInt();
+				System.out.println("Enter Name");
+				name = sc.next();
+				System.out.println("Enter the salary");
+				sal = sc.nextDouble();
+				Employee emp = new Employee();
+				emp.setEmpId(id);
+				emp.setEmpName(name);
+				emp.setEmpSal(sal);
+				
+				employeeService.addEmployee(emp);
+			}
+			if (choice == 2) {
+				System.out.println("Enter the Id to remove: ");
+				id = sc.nextInt();
+				try {
+					employeeService.removeEmployee(id);
+					break;
+				} catch (Exception e) {
+					// TODO: handle exception
+					System.out.println("\nException: " + e.getMessage());
+					continue;
+				}
+			}
+			if(choice==3) {
+				System.out.println("Enter the Id to update: ");
+				id=sc.nextInt();
+				System.out.println("Enter Name");
+				name = sc.next();
+				System.out.println("Enter the salary");
+				sal = sc.nextDouble();
+				employeeService.removeEmployee(id);
+				Employee emp = new Employee();
+				emp.setEmpId(id);
+				emp.setEmpName(name);
+				emp.setEmpSal(sal);
+
+				employeeService.addEmployee(emp);
+			}
+			if(choice==4) {
+				List<Employee> empList = employeeService.showAll();
+				System.out.println(empList);
+			}
+			if(choice==5)
+			{
+				System.out.println("Enter the salary range, from:");
+				min = sc.nextDouble();
+				max = sc.nextDouble();
+			}
+			if(choice==6)
+			{
+				System.exit(1);
+			}
+		}
+		sc.close();
+	}
+
+}

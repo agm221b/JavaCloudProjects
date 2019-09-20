@@ -1,0 +1,43 @@
+package com.cg.demojpa.ui;
+
+import java.util.Scanner;
+
+import com.cg.demojpa.dto.Employee;
+import com.cg.demojpa.service.EmployeeService;
+import com.cg.demojpa.service.EmployeeServiceImpl;
+
+public class EmployeeMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		EmployeeService employeeService = new EmployeeServiceImpl();
+		
+		Scanner sc = new Scanner(System.in);
+		/*
+		 * System.out.println("Enter the Id"); int id = sc.nextInt();
+		 * System.out.println("Enter Name"); String name = sc.next();
+		 * System.out.println("Enter the salary"); double sal = sc.nextDouble();
+		 * 
+		 * Employee emp = new Employee(); emp.setEmpId(id); emp.setEmpName(name);
+		 * emp.setEmpSal(sal);
+		 * 
+		 * employeeService.addEmployee(emp);
+		 */
+		while(true)
+		{
+			
+		System.out.println("Enter the Id to remove: ");
+		int id=sc.nextInt();
+		try {
+			employeeService.removeEmployee(id);
+		}catch (Exception e) {
+			// TODO: handle exception
+			System.out.println("Exception: "+e);
+		}
+		
+		}
+		sc.close();
+	}
+
+}
