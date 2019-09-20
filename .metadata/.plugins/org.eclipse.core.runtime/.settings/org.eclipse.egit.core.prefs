@@ -1,5 +1,5 @@
-GitRepositoriesView.GitDirectories=D\:\\Git\\.git;
-GitRepositoriesView.GitDirectories.relative=D\:\\Git\\.git;
+GitRepositoriesView.GitDirectories=D\:\\Git\\.git;D\:\\Jee c\\JavaCloud\\.git;
+GitRepositoriesView.GitDirectories.relative=D\:\\Git\\.git;.git;
 RepositorySearchDialogDeepSearch=true
 RepositorySearchDialogSearchPath=D\:\\Jee c\\JavaCloud
 core_autoIgnoreDerivedResources=false
