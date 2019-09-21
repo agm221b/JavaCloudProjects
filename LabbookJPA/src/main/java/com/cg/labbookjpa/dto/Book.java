@@ -1,17 +1,25 @@
 package com.cg.labbookjpa.dto;
 
-import javax.persistence.Id;
+import java.util.List;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.ManyToMany;
+@Entity
 public class Book {
 	@Id
-	private Integer ISBN;
+	private Integer isbn;
 	private String title;
 	private Double price;
+	@ManyToMany
+	private List<Author> authorList;
+	
+	
 	public Integer getISBN() {
-		return ISBN;
+		return isbn;
 	}
-	public void setISBN(Integer iSBN) {
-		ISBN = iSBN;
+	public void setISBN(Integer isbn) {
+		this.isbn = isbn;
 	}
 	public String getTitle() {
 		return title;
@@ -25,11 +33,17 @@ public class Book {
 	public void setPrice(Double price) {
 		this.price = price;
 	}
+	public List<Author> getAuthorList() {
+		return authorList;
+	}
+	public void setAuthorList(List<Author> authorList) {
+		this.authorList = authorList;
+	}
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + ((ISBN == null) ? 0 : ISBN.hashCode());
+		result = prime * result + ((isbn == null) ? 0 : isbn.hashCode());
 		result = prime * result + ((price == null) ? 0 : price.hashCode());
 		result = prime * result + ((title == null) ? 0 : title.hashCode());
 		return result;
@@ -43,10 +57,10 @@ public class Book {
 		if (getClass() != obj.getClass())
 			return false;
 		Book other = (Book) obj;
-		if (ISBN == null) {
-			if (other.ISBN != null)
+		if (isbn == null) {
+			if (other.isbn != null)
 				return false;
-		} else if (!ISBN.equals(other.ISBN))
+		} else if (!isbn.equals(other.isbn))
 			return false;
 		if (price == null) {
 			if (other.price != null)
@@ -66,13 +80,13 @@ public class Book {
 	}
 	public Book(Integer iSBN, String title, Double price) {
 		super();
-		ISBN = iSBN;
+		isbn = iSBN;
 		this.title = title;
 		this.price = price;
 	}
 	@Override
 	public String toString() {
-		return "Book [ISBN=" + ISBN + ", title=" + title + ", price=" + price + "]";
+		return "Book \n[ISBN=" + isbn + ",\n title=" + title + ",\n price=" + price + "]";
 	}
 	
 	

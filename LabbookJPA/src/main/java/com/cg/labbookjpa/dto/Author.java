@@ -1,20 +1,27 @@
 package com.cg.labbookjpa.dto;
 
-import javax.persistence.Column;
-import javax.persistence.Id;
+import java.util.List;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.ManyToMany;
+@Entity
 public class Author {
 	@Id
 	private Integer ID;
-	private String author;
+	private String authorName;
+	@ManyToMany
+	private List<Book> bookList;
+	
 	public Author() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public Author(Integer iD, String author) {
+	public Author(Integer iD, String authorName) {
 		super();
-		ID = iD;
-		this.author = author;
+		this.ID = iD;
+		this.authorName = authorName;
 	}
 	public Integer getID() {
 		return ID;
@@ -22,18 +29,24 @@ public class Author {
 	public void setID(Integer iD) {
 		ID = iD;
 	}
-	public String getAuthor() {
-		return author;
+	public String getAuthorName() {
+		return authorName;
 	}
-	public void setAuthor(String author) {
-		this.author = author;
+	public void setAuthorName(String authorName) {
+		this.authorName = authorName;
+	}
+	public List<Book> getBookList() {
+		return bookList;
+	}
+	public void setBookList(List<Book> bookList) {
+		this.bookList = bookList;
 	}
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
 		result = prime * result + ((ID == null) ? 0 : ID.hashCode());
-		result = prime * result + ((author == null) ? 0 : author.hashCode());
+		result = prime * result + ((authorName == null) ? 0 : authorName.hashCode());
 		return result;
 	}
 	@Override
@@ -50,16 +63,16 @@ public class Author {
 				return false;
 		} else if (!ID.equals(other.ID))
 			return false;
-		if (author == null) {
-			if (other.author != null)
+		if (authorName == null) {
+			if (other.authorName != null)
 				return false;
-		} else if (!author.equals(other.author))
+		} else if (!authorName.equals(other.authorName))
 			return false;
 		return true;
 	}
 	@Override
 	public String toString() {
-		return "Author [ID=" + ID + ", author=" + author + "]";
+		return "Author \n[ID=" + ID + ",\n author=" + authorName + "]";
 	}
 	
 }

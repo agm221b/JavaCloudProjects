@@ -16,5 +16,9 @@ public interface AuthorDao {
 	public int removeBook(Integer isbn);
 	public List<Book> findAllBook();
 	public Book findBookByISBN(Integer isbn);
+	
+	public void beginTransaction();
+	public void commitTransaction();
+	
 
 }
