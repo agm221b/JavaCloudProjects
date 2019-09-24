@@ -17,8 +17,6 @@ public interface AuthorDao {
 	public List<Book> findAllBook();
 	public Book findBookByISBN(Integer isbn);
 	
-	public void beginTransaction();
-	public void commitTransaction();
 	
 
 }

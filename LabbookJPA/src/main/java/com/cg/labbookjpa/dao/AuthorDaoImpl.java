@@ -6,92 +6,121 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
+import javax.persistence.Query;
 
 import com.cg.labbookjpa.dto.Author;
 import com.cg.labbookjpa.dto.Book;
 
 public class AuthorDaoImpl implements AuthorDao {
 
-	EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("labbookjpa");
-	EntityManager entityManager;
-
-	public AuthorDaoImpl() {
+	private static EntityManagerFactory entityManagerFactory;
+	private static EntityManager entityManager;
+	static {
+		entityManagerFactory = Persistence.createEntityManagerFactory("labbookjpa");
 		entityManager = entityManagerFactory.createEntityManager();
-		entityTransaction = entityManager.getTransaction();
+
 	}
 
-	EntityTransaction entityTransaction;
+	public AuthorDaoImpl() {
+
+	}
 
 	public Author saveAuthor(Author author) {
 		// TODO Auto-generated method stub
 		// Author authorSave = entityManager.find(Author.class, author.getID());
+		EntityTransaction entityTransaction = entityManager.getTransaction();
+		entityTransaction.begin();
 		List<Book> bookList = author.getBookList();
 		for (Book book : bookList) {
-			Book book2 = entityManager.find(Book.class, book.getISBN());
-			if (book2 != null) {
-				int bookIndex = bookList.indexOf(book2);
-				bookList.add(bookIndex, book2);
-
-			}
-			else
-			{
-				saveBook(book);
-			}
-
+			book.getAuthorList().add(author);
 		}
-		author.setBookList(bookList);
-
-		beginTransaction();
+		// author.setBookList(bookList);
 		entityManager.persist(author);
-		commitTransaction();
-		return null;
+		entityTransaction.commit();
+		return author;
 	}
 
 	public int removeAuthor(Integer id) {
 		// TODO Auto-generated method stub
-		return 0;
+		Author author = entityManager.find(Author.class, id);
+		EntityTransaction entityTransaction = entityManager.getTransaction();
+		if (author != null) {
+
+			entityTransaction.begin();
+
+			List<Book> bookList = author.getBookList();
+			for (Book book : bookList) {
+				book.getAuthorList().remove(author);
+
+				entityManager.remove(author);
+
+			}
+			entityTransaction.commit();
+		}
+		return 1;
 	}
 
 	public List<Author> findAllAuthor() {
 		// TODO Auto-generated method stub
-		return null;
+		Query query = entityManager.createQuery("FROM Author");
+		List<Author> authorList = query.getResultList();
+		return authorList;
 	}
 
 	public Author findAuthorById(Integer id) {
 		// TODO Auto-generated method stub
-		return null;
+		Query query = entityManager.createQuery("FROM Author WHERE id= :authorId");
+		query.setParameter("authorId", id);
+		Author author = (Author) query.getSingleResult();
+		return author;
 	}
 
 	public Book saveBook(Book book) {
 		// TODO Auto-generated method stub
-		return null;
+		EntityTransaction entityTransaction = entityManager.getTransaction();
+		entityTransaction.begin();
+		List<Author> authorList = book.getAuthorList();
+		for (Author author : authorList) {
+			author.getBookList().add(book);
+		}
+		entityManager.persist(book);
+		entityTransaction.commit();
+		return book;
 	}
 
 	public int removeBook(Integer isbn) {
 		// TODO Auto-generated method stub
-		return 0;
+		Book book = entityManager.find(Book.class, isbn);
+		EntityTransaction entityTransaction = entityManager.getTransaction();
+		if (book != null) {
+
+			entityTransaction.begin();
+
+			List<Author> authorList = book.getAuthorList();
+			for (Author author : authorList) {
+				author.getBookList().remove(book);
+
+				entityManager.remove(book);
+
+			}
+			entityTransaction.commit();
+		}
+		return 1;
 	}
 
 	public List<Book> findAllBook() {
 		// TODO Auto-generated method stub
-		return null;
+		Query query = entityManager.createQuery("FROM Book");
+		List<Book> bookList = query.getResultList();
+		return bookList;
 	}
 
 	public Book findBookByISBN(Integer isbn) {
 		// TODO Auto-generated method stub
-		return null;
-	}
-
-	public void beginTransaction() {
-		// TODO Auto-generated method stub
-		entityTransaction.begin();
-
-	}
-
-	public void commitTransaction() {
-		// TODO Auto-generated method stub
-		entityTransaction.commit();
-
+		Query query = entityManager.createQuery("FROM Book WHERE isbn= :isbn");
+		query.setParameter("isbn", isbn);
+		Book book = (Book) query.getSingleResult();
+		return book;
 	}
 
 }
