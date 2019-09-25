@@ -31,6 +31,8 @@
 			<option value="BTech">BTech</option>
 			<option value="MBA">MBA</option>
 		</select> <input type="submit" value="Submit">
+		<input type="reset" value="Clear">
+		
 
 	</form>
 </body>
