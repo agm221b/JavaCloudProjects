@@ -39,16 +39,28 @@ public class ProductController {
 	}
 	
 	@RequestMapping(value = "/delete", method = RequestMethod.GET)
-	public String deletePage() {
+	public String deleteProduct() {
 		return "DeleteProduct";
 	}
 	@RequestMapping(value = "/deleteproduct", method = RequestMethod.POST)
 	public String deleteData(@RequestParam("pid")int prodId) {
-		//System.out.println(pro);
-//		productservice.`(pro);
+
 		System.out.println(prodId);
 		productservice.removeProduct(prodId);
 		return "redirect:/showall";
+	}
+	
+	@RequestMapping(value = "/find", method = RequestMethod.GET)
+	public String findProduct() {
+		return "FindProduct";
+	}
+	
+	@RequestMapping(value = "/findprod", method = RequestMethod.POST)
+	public ModelAndView findData(@RequestParam("pid")int prodId) {
+
+		System.out.println(prodId);
+		Product product =productservice.searchProduct(prodId);
+		return new ModelAndView("ShowProduct","prodList",product);					//separate ShowSingleProd.jsp
 	}
 	
 	

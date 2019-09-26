@@ -11,7 +11,7 @@ Welcome to Product Management System.........
 <a href="addpage">Add Product</a>
 <a href="showall">Show Product</a>
 <a href="delete">Delete Product</a>
-<a href="">Search Product</a>
+<a href="find">Search Product</a>
 <a href="">Update Product</a>
 
 </body>
