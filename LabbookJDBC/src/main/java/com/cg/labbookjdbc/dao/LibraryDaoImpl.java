@@ -260,10 +260,28 @@ public class LibraryDaoImpl implements LibraryDao {
 			ps.setString(3, author.getLastName());
 			ps.setLong(4, author.getPhoneNo().longValue());
 
-			rs = ps.executeQuery();
+			ps.executeUpdate();
+			
+			rs = ps.getGeneratedKeys();
 			BigInteger authorId = BigInteger.valueOf(rs.getLong("author_id"));
+			author.setAuthorId(authorId);
 
-			ps = connection.prepareStatement(sql2);
+			ps = connection.prepareStatement(sql2, Statement.RETURN_GENERATED_KEYS);
+			ps.setString(1, book.getTitle());
+			ps.setDouble(2, book.getPrice());
+			
+			ps.executeUpdate();
+			
+			rs = ps.getGeneratedKeys();
+			BigInteger isbn = BigInteger.valueOf(rs.getLong("isbn"));
+			book.setIsbn(isbn);
+			
+			ps = connection.prepareStatement(sql3);
+			ps.setLong(1, book.getIsbn().longValue());
+			ps.setLong(2, author.getAuthorId().longValue());
+			
+			ps.executeUpdate();
+			
 
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
