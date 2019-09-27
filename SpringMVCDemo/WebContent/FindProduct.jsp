@@ -23,5 +23,7 @@ Find Product:
 
 		</table>
 		</form>
+		<br><br>
+		<jsp:include page="ShowProduct.jsp"/>
 </body>
 </html>

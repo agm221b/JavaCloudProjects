@@ -14,6 +14,9 @@
 			<th>Product Id</th>
 			<th>Product Name</th>
 			<th>Product Price</th>
+			<th>Product Type</th>
+			<th>Product Availability</th>
+			<th>Product Features</th>
 		</tr>
 
 		<a:forEach var="pro" items="${prodList}">
@@ -21,6 +24,9 @@
 				<td>${pro.prodId}</td>
 				<td>${pro.prodName}</td>
 				<td>${pro.prodPrice}</td>
+				<td>${pro.type}</td>
+				<td>${pro.online}</td>
+				<td>${pro.features}</td>
 			</tr>
 		</a:forEach>
 

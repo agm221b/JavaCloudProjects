@@ -1,9 +1,28 @@
 package com.cg.springmvcdemo.dto;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
+import javax.validation.constraints.Size;
+
+import org.hibernate.validator.constraints.NotEmpty;
+
+@Entity
+@Table(name = "product_db")
 public class Product {
-	
+	@Id
+	@Column(name = "prod_id")
+	@NotNull(message = "ID cannot be null")
 	private Integer prodId;
+	@Column(name = "prod_name")
+	@NotEmpty(message = "Name cannot be empty")
+	@Size(min = 3, max = 20, message = "Name must be between 3 to 20 characters")
 	private String prodName;
+	@Column(name = "prod_price")
+	@NotNull(message = "Price cannot be empty")
 	private Double prodPrice;
 	private String features;
 	private String type;
