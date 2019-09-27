@@ -20,7 +20,7 @@
 			<tr>
 				<td>Product Name</td>
 				<td><fo:input path="prodName" /></td>
-				<td><span><fo:errors path="prodName"></fo:errors></span></td>
+				<td><span><fo:errors path="prodName" delimiter=","></fo:errors></span></td>
 			</tr>
 
 			<tr>
@@ -43,6 +43,7 @@
 			<tr>
 				<td>Product Features</td>
 				<td><fo:checkboxes path="features" items="${datafeatures}"/></td>
+				<td><span><fo:errors path="features" ></fo:errors></span></td>
 			</tr>
 			
 			<tr>
