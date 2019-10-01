@@ -22,10 +22,11 @@ import com.cg.springmvcdemo.service.ProductService;
 public class ProductController {
 	@Autowired
 	ProductService productservice;
+	
 
 	@RequestMapping(value = "/myfirst", method = RequestMethod.GET)
 	public String homePage() {
-		return "home";
+		return "jsp/home";
 	}
 
 	@RequestMapping(value = "/addpage", method = RequestMethod.GET)
@@ -42,7 +43,7 @@ public class ProductController {
 		features.add("30 day returns");
 		features.add("Free Shipping");
 		modelmap.put("datafeatures", features);
-		return "AddProduct";
+		return "jsp/AddProduct";
 	}
 
 	@RequestMapping(value = "/pagesubmit", method = RequestMethod.POST)
@@ -61,7 +62,7 @@ public class ProductController {
 		features.add("Free Shipping");
 		modelmap.put("datafeatures", features);
 		if (result.hasErrors())
-			return "AddProduct";
+			return "jsp/AddProduct";
 		else {
 			productservice.addProduct(pro);
 			return "home";
@@ -71,12 +72,12 @@ public class ProductController {
 	@RequestMapping(value = "/showall", method = RequestMethod.GET)
 	public ModelAndView getAllData() {
 		List<Product> myList = productservice.showProduct();
-		return new ModelAndView("ShowProduct", "prodList", myList);
+		return new ModelAndView("jsp/ShowProduct", "prodList", myList);
 	}
 
 	@RequestMapping(value = "/delete", method = RequestMethod.GET)
 	public String deleteProduct() {
-		return "DeleteProduct";
+		return "jsp/DeleteProduct";
 	}
 
 	@RequestMapping(value = "/deleteproduct", method = RequestMethod.POST)
@@ -89,7 +90,7 @@ public class ProductController {
 
 	@RequestMapping(value = "/find", method = RequestMethod.GET)
 	public String findProduct() {
-		return "FindProduct";
+		return "jsp/FindProduct";
 	}
 
 	@RequestMapping(value = "/findprod", method = RequestMethod.POST)
@@ -98,7 +99,7 @@ public class ProductController {
 		System.out.println(prodId);
 		List<Product> productList = new ArrayList<Product>();
 		productList.add(productservice.searchProduct(prodId));
-		return new ModelAndView("FindProduct", "prodList", productList);
+		return new ModelAndView("jsp/FindProduct", "prodList", productList);
 	}
 
 }
